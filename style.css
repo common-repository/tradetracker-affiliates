@@ -1,0 +1,83 @@
+table.sample {
+	border-width: 2px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: separate;
+	background-color: white;
+	margin:2px auto;
+}
+table.sample th {
+	border-width: 1px;
+	padding: 1px;
+	border-style: inset;
+	border-color: gray;
+	background-color: rgb(255, 245, 238);
+	-moz-border-radius: ;
+}
+table.sample td {
+	border-width: 1px;
+	padding: 1px;
+	border-style: inset;
+	border-color: gray;
+	background-color: rgb(255, 245, 238);
+	-moz-border-radius:8px ;
+	border-radius:8px ;
+	padding:5px;
+}
+
+.round {
+text-align:center;
+width:98%;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: 4px solid #ccc;
+padding: 3px;
+}
+
+.titlebox{
+float:left;
+padding:0 5px;
+margin:-10px 0 0 30px;
+background:#ccc;
+color:white;
+font-weight:900;
+}
+A:link { text-decoration: none } 
+.gallerycontainer{
+position: fixed;
+/*Add a height attribute and set to largest image's height to prevent overlaying*/
+}
+.thumbnail img{
+border: 1px solid white;
+margin: 0 5px 5px 0;
+}
+.thumbnail:hover{
+background-color: transparent;
+}
+.thumbnail:hover img{
+border: 2px solid brown;
+}
+.thumbnail span{ /*CSS for enlarged image*/
+position: fixed;
+background-color: lightyellow;
+padding: 5px;
+left: -5px;
+border: 1px gray;
+visibility: hidden;
+color: black;
+font-weight:900;
+text-decoration: none;
+}
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+width:300px; 
+}
+.thumbnail:hover span{ /*CSS for enlarged image*/
+visibility: visible;
+top: 100px;
+left: 100px; /*position where enlarged image should offset horizontally */
+z-index: 350;
+}
+	
